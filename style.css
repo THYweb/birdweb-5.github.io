@@ -50,6 +50,11 @@ section ul li.active{
 	color: #fff;
 }
 
+section ul li:hover{
+	background:  #0D53FE;
+	color: #fff;
+}
+
 .birddiv{
 	display: flex;
 	justify-content: center;

@@ -381,7 +381,58 @@ footer .ft{
 	
 	#divShow{
 		width:400px;
-		height:300px;
+		height:330px;
+		overflow-wrap: break-word;
+		white-space: normal;
+		text-align: center;
+		margin-left:10px;
+	}
+
+	#divShow h1{
+		font-size:24px;
+	}
+
+	#divShow p{
+		font-size:18px;
+	}
+	
+}
+
+@media screen and (max-width:920px){
+
+	.birddiv{
+		flex-wrap: wrap;
+	}
+
+	.birdsection{
+		width: 100%;
+		height: 500px;
+	}
+
+	.bird .itemBox{
+		position: relative;
+		width: 150px;
+		height: 150px;
+		margin: 5px;
+		display: block;
+	}
+
+	
+	#birdbox{
+		display: flex;
+		flex-wrap: wrap;
+		margin:10px auto;
+	}
+
+	#divImg img{
+		width:400px;
+		height:400px;
+		object-fit: cover;
+	}
+	
+	#divShow{
+		width:400px;
+		height:305px;
 		overflow-wrap: break-word;
 		white-space: normal;
 		text-align: center;

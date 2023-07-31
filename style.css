@@ -25,9 +25,6 @@ main{
 	margin: 20px auto;
 }
 
-
-
-
 section ul{
 	display: flex;
 	justify-content: center;
@@ -50,27 +47,31 @@ section ul li.active{
 	color: #fff;
 }
 
-section ul li:hover{
-	background:  #0D53FE;
-	color: #fff;
-}
-
 .birddiv{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	
-	
 }
 
 .birdsection{
-	width: 30%;
+	width:30%;
+	height:520px;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
-	margin: 40px auto;
-	padding: 20px;
+	margin: 10px auto;
+	padding: 5px;
+	overflow: scroll;
+}
+
+.birdsection::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+	background-color:#F8F8FF;
+}
+
+.birdsection::-webkit-scrollbar-thumb{
+	background-color: #F8F8FF;
+	border: 2px solid #F5F5F5;
 }
 
 .bird{
@@ -78,15 +79,15 @@ section ul li:hover{
 	justify-content:center;
 	align-items: center;
 	flex-wrap: wrap;
-	
 }
 
 .bird .itemBox{
-	position: relative;
-	width: 50px;
-	height: 50px;
+	
+	width: 75px;
+	height: 75px;
 	margin: 5px;
 	display: block;
+	position: relative;
 }
 
 .bird .itemBox.hide{
@@ -127,8 +128,7 @@ cover:保持原有尺寸比例。但部分内容可能被剪切。
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	margin:40px auto;
-	
+	margin: 10px;
 }
 
 #divImg img{
@@ -250,14 +250,15 @@ footer .ft{
 
 	.birdsection{
 		width: 30%;
+		height: 430px;
 	}
 	
 	.bird .itemBox{
-		position: relative;
-		width: 50px;
-		height: 50px;
+		width: 75px;
+		height: 75px;
 		margin: 5px;
 		display: block;
+		position: relative;
 	}
 
 	
@@ -294,7 +295,7 @@ footer .ft{
 
 
 
-@media screen and (max-width:1280px){
+@media screen and (max-width:1380px){
 
 	.birddiv{
 		flex-wrap: wrap;
@@ -302,14 +303,15 @@ footer .ft{
 
 	.birdsection{
 		width: 30%;
+		height: 430px;
 	}
 	
 	.bird .itemBox{
-		position: relative;
-		width: 50px;
-		height: 50px;
+		width: 55px;
+		height: 55px;
 		margin: 5px;
 		display: block;
+		position: relative;
 	}
 
 	
@@ -353,6 +355,7 @@ footer .ft{
 
 	.birdsection{
 		width: 100%;
+		height: 500px;
 	}
 
 	.bird .itemBox{
@@ -397,6 +400,15 @@ footer .ft{
 
 @media screen and (max-width:830px){
 
+	.birddiv{
+		flex-wrap: wrap;
+	}
+
+	.birdsection{
+		width: 100%;
+		height: 840px;
+	}
+
 	.bird .itemBox{
 		position: relative;
 		width: 400px;
@@ -405,8 +417,56 @@ footer .ft{
 		display: block;
 	}
 
+	#birdbox{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#divImg{
+		margin:20px auto;
+	}
+
+	#divImg img{
+		width:400px;
+		height:400px;
+		object-fit: cover;
+	}
+	
+	#divShow{
+		width:400px;
+		height:300px;
+		overflow-wrap: break-word;
+		white-space: normal;
+		text-align: center;
+		margin-left:10px;
+	}
+
+	#divShow h1{
+		font-size:36px;
+	}
+
+	#divShow p{
+		font-size:24px;
+	}
+	
+}
+@media screen and (max-width:770px){
+
 	.birddiv{
 		flex-wrap: wrap;
+	}
+
+	.birdsection{
+		width: 100%;
+		height: 840px;
+	}
+
+	.bird .itemBox{
+		position: relative;
+		width: 400px;
+		height: 400px;
+		margin: 5px;
+		display: block;
 	}
 
 	#birdbox{
@@ -445,13 +505,19 @@ footer .ft{
 
 @media screen and (max-width:545px){
 
+	.birddiv{
+		flex-wrap: wrap;
+	}
+
 	.birdsection{
 		width:100%;
+		height: 940px;
 	}
+
 	.bird .itemBox{
 		position: relative;
-		width: 400px;
-		height: 400px;
+		width: 300px;
+		height: 300px;
 		margin: 5px;
 		display: block;
 	}
@@ -470,8 +536,8 @@ footer .ft{
 	}
 
 	#divImg img{
-		width:400px;
-		height:400px;
+		width:300px;
+		height:200px;
 		object-fit: cover;
 	}
 	
@@ -510,6 +576,79 @@ footer .ft{
 
 	.birddiv{
 		flex-wrap: wrap;
+	}
+
+	.birdsection{
+		width:100%;
+		height: 1065px;
+	}
+
+	.bird .itemBox{
+		position: relative;
+		width: 200px;
+		height: 200px;
+		margin: 5px;
+		display: block;
+	}
+
+	
+
+	.birdbox{
+		display: flex;
+		flex-direction: column;
+		margin:20px auto;
+	}
+
+	#divImg img{
+		width:200px;
+		height:200px;
+		object-fit: cover;
+	}
+
+	#divShow{
+		width: 200px;
+		height: 200px;
+		margin:15px auto;
+		
+	}
+
+	#divShow h1{
+		font-size:24px;
+	}
+
+	#divShow p{
+		font-size:16px;
+	}
+	
+	.birdbtn{
+		position: relative;
+		left: 22%;
+		right: 20%;
+	}
+
+	footer .ft{
+		font-size:18px;
+		position: relative;
+		top:32%;
+	}
+
+}
+
+@media screen and (max-width:380px){
+
+	header p{
+		font-size:48px;
+		position: relative;
+		top:15%;
+	}
+
+	.birddiv{
+		flex-wrap: wrap;
+	}
+
+	.birdsection{
+		width:100%;
+		height: 1065px;
 	}
 
 	.bird .itemBox{
@@ -564,6 +703,15 @@ footer .ft{
 }
 
 @media screen and (max-width:290px){
+
+	.birddiv{
+		flex-wrap: wrap;
+	}
+
+	.birdsection{
+		width:100%;
+		height: 1065px;
+	}
 
 	#divShow h1{
 		font-size:18px;
